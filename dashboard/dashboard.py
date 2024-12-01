@@ -11,7 +11,7 @@ def create_total_rent_based_time(selected_year_df):
     time = selected_year_df.groupby(by=['hr', 'weekday'])['cnt'].sum().reset_index()
     return time
 
-all_df = pd.read_csv('main_data.csv')
+all_df = pd.read_csv('dashboard/main_data.csv')
 
 with st.sidebar:
     st.image('https://cdn.pixabay.com/photo/2016/06/14/15/01/vector-1456759_640.png')
